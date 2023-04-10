@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@color/nono">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/menu"
+                android:minHeight="60dp"
+                />
+
+
+            <TextView
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="5.5dp"
+                android:text="MOMKIDS"
+                android:textSize="25dp"/>
+
+            <ImageView
+                android:id="@+id/notification"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="262dp"
+                app:srcCompat="@drawable/notifications_active_24" />
+
+            <ImageView
+                android:id="@+id/person"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="312dp"
+                app:srcCompat="@drawable/baseline_person_24" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header">
+            <RelativeLayout
+                android:id="@+id/notification_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:minHeight="70dp">
+
+
+                <ImageView
+                    android:id="@+id/img_avatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="40dp"
+                    android:minHeight="40dp"
+                    app:srcCompat="@drawable/baseline_person_24" />
+
+                <TextView
+                    android:id="@+id/txt_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="16dp"
+                    android:text="Bạn có lịch tiêm thuốc lúc 8h" />
+                <TextView
+                    android:id="@+id/txt_tg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="14dp"
+                    android:textStyle="italic"
+                    android:text="8 giờ trước" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/notification_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:minHeight="70dp"
+                android:layout_below="@id/notification_1">
+
+
+                <ImageView
+                    android:id="@+id/img_avatar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="40dp"
+                    android:minHeight="40dp"
+                    app:srcCompat="@drawable/baseline_person_24" />
+
+                <TextView
+                    android:id="@+id/txt_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="16dp"
+                    android:text="Bạn có lịch khám bác sỹ lúc 15 giờ" />
+                <TextView
+                    android:id="@+id/txt_tg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="14dp"
+                    android:textStyle="italic"
+                    android:text="3 giờ trước" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/notification_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:minHeight="70dp"
+                android:layout_below="@id/notification_2">
+
+
+                <ImageView
+                    android:id="@+id/img_avatar3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="40dp"
+                    android:minHeight="40dp"
+                    app:srcCompat="@drawable/baseline_person_24" />
+
+                <TextView
+                    android:id="@+id/txt_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="16dp"
+                    android:text="Bạn có lịch khám bác sỹ lúc 15 giờ" />
+                <TextView
+                    android:id="@+id/txt_tg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="14dp"
+                    android:textStyle="italic"
+                    android:text="3 giờ trước" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/notification_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:minHeight="70dp"
+                android:layout_below="@id/notification_3">
+
+
+                <ImageView
+                    android:id="@+id/img_avatar4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="40dp"
+                    android:minHeight="40dp"
+                    app:srcCompat="@drawable/baseline_person_24" />
+
+                <TextView
+                    android:id="@+id/txt_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="16dp"
+                    android:text="Bạn có lịch khám bác sỹ lúc 15 giờ" />
+                <TextView
+                    android:id="@+id/txt_tg4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="14dp"
+                    android:textStyle="italic"
+                    android:text="3 giờ trước" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>
