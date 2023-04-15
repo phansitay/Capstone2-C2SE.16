@@ -3,6 +3,7 @@ package com.example.momandbaby;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -34,6 +35,7 @@ public class SignUpActivity extends AppCompatActivity {
     private ProgressBar progressBar;
     private static final String TAG ="SigUpActivity";
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,16 +43,16 @@ public class SignUpActivity extends AppCompatActivity {
 
         getSupportActionBar().setTitle("Register");
         Toast.makeText(SignUpActivity.this,"Your can register now",Toast.LENGTH_LONG).show();
-        editTextRegisterFullName = findViewById(R.id.edittext_register_name);
-        editTextRegisterPassword = findViewById(R.id.edittext_register_pass);
-        editTextRegisterConfirmPassword = findViewById(R.id.edittext_register_confirmpass);
-        editTextRegisterEmail = findViewById(R.id.edittext_register_email);
-        editTextRegisterPhone = findViewById(R.id.edittext_register_phone);
-        editTextRegisterAddress = findViewById(R.id.edittext_register_address);
+        editTextRegisterFullName = findViewById(R.id.edt_register_name);
+        editTextRegisterPassword = findViewById(R.id.edt_register_pass);
+        editTextRegisterConfirmPassword = findViewById(R.id.edt_register_confirmpass);
+        editTextRegisterEmail = findViewById(R.id.edt_register_email);
+        editTextRegisterPhone = findViewById(R.id.edt_register_phone);
+        editTextRegisterAddress = findViewById(R.id.edt_register_address);
         progressBar = findViewById(R.id.progressBar);
 
 
-        Button buttonRegister = findViewById(R.id.button_register);
+        Button buttonRegister = findViewById(R.id.btn_register);
         buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

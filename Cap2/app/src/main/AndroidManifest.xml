@@ -12,6 +12,18 @@
         android:theme="@style/Theme.MomAndBaby"
         tools:targetApi="31">
         <activity
+            android:name=".DoctorProfile"
+            android:exported="false" />
+        <activity
+            android:name=".makeAnAppointment"
+            android:exported="false" />
+        <activity
+            android:name=".ViewEvaluate"
+            android:exported="false" />
+        <activity
+            android:name=".Evaluate"
+            android:exported="false" />
+        <activity
             android:name=".UpdateCalendarActivity"
             android:exported="false" />
         <activity

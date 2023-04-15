@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Evaluate"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:layout_margin="25dp"
+        android:background="@color/background">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phòng khám nhi- Dinh dưỡng chuyên sâu"
+            android:gravity="center"
+            android:textSize="18dp"
+            />
+        <LinearLayout
+            android:id="@+id/layout_vote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txt_title"
+            android:gravity="center">
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            android:rating="4"
+            android:progressTint="@android:color/holo_orange_dark"
+            />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout_vote"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt_title_vote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Viết nhận xét,đánh giá"
+                android:textSize="18dp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/edt_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boder2"
+                android:layout_below="@+id/txt_title_vote"
+                android:hint="Nhập nội dung"
+                android:height="60dp"
+                android:textSize="17dp"
+                android:padding="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_view_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout_comment"
+            android:gravity="center">
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout_view_comment"
+            android:gravity="center"
+            android:layout_marginTop="360dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Đánh giá"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hủy"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

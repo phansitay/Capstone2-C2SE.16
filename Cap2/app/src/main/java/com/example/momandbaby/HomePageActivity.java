@@ -50,5 +50,24 @@ public class HomePageActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        Button buttonCalendar = findViewById(R.id.btn_calender);
+        buttonCalendar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomePageActivity.this,makeAnAppointment.class);
+                startActivity(intent);
+            }
+        });
+
+        Button buttonDoctor = findViewById(R.id.btn_doctor);
+        buttonDoctor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomePageActivity.this,DoctorProfile.class);
+                startActivity(intent);
+            }
+        });
     }
 }

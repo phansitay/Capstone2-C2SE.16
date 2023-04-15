@@ -47,7 +47,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/edittext_register_name"
+            android:id="@+id/edt_register_name"
             android:hint="Enter your full name"
             android:inputType="textPersonName"
             android:textSize="16sp"
@@ -60,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/text_register_pass"
-            android:layout_below="@+id/edittext_register_name"
+            android:layout_below="@+id/edt_register_name"
             android:text="Password"
             android:textColor="#555555"
             android:padding="6dp"
@@ -70,7 +70,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/edittext_register_pass"
+            android:id="@+id/edt_register_pass"
             android:hint="Enter your password"
             android:inputType="textPersonName"
             android:textSize="16sp"
@@ -83,7 +83,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/text_register_confirmpass"
-            android:layout_below="@+id/edittext_register_pass"
+            android:layout_below="@+id/edt_register_pass"
             android:text="Confirm Password"
             android:textColor="#555555"
             android:padding="6dp"
@@ -93,7 +93,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/edittext_register_confirmpass"
+            android:id="@+id/edt_register_confirmpass"
             android:hint="Enter your confirm password"
             android:inputType="textPersonName"
             android:textSize="16sp"
@@ -106,7 +106,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/text_register_email"
-            android:layout_below="@+id/edittext_register_confirmpass"
+            android:layout_below="@+id/edt_register_confirmpass"
             android:text="Email"
             android:textColor="#555555"
             android:padding="6dp"
@@ -116,7 +116,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/edittext_register_email"
+            android:id="@+id/edt_register_email"
             android:hint="Enter your email"
             android:inputType="textPersonName"
             android:textSize="16sp"
@@ -128,7 +128,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/text_register_phone"
-            android:layout_below="@+id/edittext_register_email"
+            android:layout_below="@+id/edt_register_email"
             android:text="Phone"
             android:textColor="#555555"
             android:padding="6dp"
@@ -138,7 +138,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/edittext_register_phone"
+            android:id="@+id/edt_register_phone"
             android:hint="Enter your phone"
             android:inputType="textPersonName"
             android:textSize="16sp"
@@ -151,7 +151,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/text_register_address"
-            android:layout_below="@+id/edittext_register_phone"
+            android:layout_below="@+id/edt_register_phone"
             android:text="Address"
             android:textColor="#555555"
             android:padding="6dp"
@@ -161,7 +161,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/edittext_register_address"
+            android:id="@+id/edt_register_address"
             android:hint="Enter your address"
             android:inputType="textPersonName"
             android:textSize="16sp"
@@ -171,12 +171,12 @@
 
 <!--        button-->
         <Button
-            android:id="@+id/button_register"
+            android:id="@+id/btn_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
             android:layout_marginRight="70dp"
-            android:layout_below="@id/edittext_register_address"
+            android:layout_below="@id/edt_register_address"
             android:layout_marginTop="50dp"
             android:text="Register"/>
 
